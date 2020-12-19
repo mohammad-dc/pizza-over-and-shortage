@@ -69,9 +69,6 @@ table_data.forEach(el => {
     tbody_table.innerHTML += el
 })
 
-console.log(tbody_table)
-
-
 let sumOver = over.reduce((a, b) => a + b);
 let sumShortage = shortage.reduce((a, b) => a + b);
 
@@ -79,5 +76,3 @@ sum_of_over.innerHTML = `Sum of over = ${sumOver}`
 sum_of_shortage.innerHTML = `Sum of shortage = ${sumShortage}`
 over_age.innerHTML = `The average number of pizzas produced more than requirement = ${sumOver / 30}`
 shortage_avg.innerHTML = `The average number of shortage of pizzas supplied = ${sumShortage / 30}`     
-
-console.log(table_data)
